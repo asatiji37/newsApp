@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="main-navbar container flex">
+            <a href="#" onclick="reload()" class="logo">
+               <h2> <b>News</b></h2>
+            </a>
+            <div class="links">
+                <ul class="flex">
+                
+                    <li class="link item" id="Cricket" onclick="onNavItemClick('Cricket')">Cricket</li>
+                    <li class="link item" id="Movies" onclick="onNavItemClick('Movies')">Movies</li>
+                    <li class="link item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="link item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search flex">
+                <input id="search-text" type="text" class="input" placeholder="e.g. Science">
+                <button id="search-button" class="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="box-container container flex" id="box-container">
+            
+        </div>
+    </main>
+
+    <template id="template">
+        <div class="box">
+            <div class="box-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="img">
+            </div>
+            <div class="box-content">
+                <h3 class="news-title" id ="title"></h3>
+                <h6 class="news-source" id="source"></h6>
+                <p class="news-desc" id="desc"></p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html> 

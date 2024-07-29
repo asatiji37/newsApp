@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --p-text-color: #29002db0;
+     --s-text-color: #00080e;
+    --news-color: #2294ed;
+    --news-color-dark: #1d69a3;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--p-text-color);
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: var(--s-text-color);
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.main-navbar {
+    justify-content: space-between;
+    padding-block: 22px;
+}
+
+
+
+.links ul {
+    gap: 16px;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link:hover {
+    color: var(--s-text-color);
+}
+
+.link:active {
+    color: red;
+}
+
+.item.active {
+    color: var(--news-color);
+}
+
+.search {
+    height: 32px;
+    gap: 8px;
+}
+
+.input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-btn {
+    background-color: var(--news-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-btn:hover {
+    background-color: var(--news-color-dark);
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.box-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    align-items: start;
+}
+
+.box {
+    width: 500px;
+    min-height: 400px;
+    box-shadow: 2px 2px 5px 4px #458bc4;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-4px);
+}
+
+.box-header img {
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+}
+
+.box-content {
+    padding: 8px;
+}
+
+.news-source {
+    margin-block: 12px;
+}
